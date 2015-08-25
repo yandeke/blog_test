@@ -6,11 +6,11 @@ package com.ydk.config;
 public class Constant {
     public final static String UTF_8="UTF-8";
 
-    public final static String APPID="wx0213967c5464356a";
-    public final static String APP_SECRET="52ba8bb884e3fae09dfa45d1949ebdc4";
+    public final static String APPID="";
+    public final static String APP_SECRET="";
     
-    public final static String EMAIL_USERNAME="yandeke123@126.com"; //发送源
-    public final static String EMAIL_PASSWORD="y867904325";//密码
+    public final static String EMAIL_USERNAME=""; //发送源
+    public final static String EMAIL_PASSWORD="";//密码
     public final static String EMAIL_HOST="smtp.126.com";//邮件服务器
     public final static String EMAIL_PORT="25";
     
@@ -26,9 +26,9 @@ public class Constant {
     
     public final static String REGISTER_SUCCESS="请登录您的邮箱继续完成注册";
     
-    public final static String SMS_UID="yandeke123";
+    public final static String SMS_UID="";
     
-    public final static String SMS_KEY="90b253348d01016499fc";
+    public final static String SMS_KEY="";
     
     public final static String CONTENT_NAME="Content-Type";
     
