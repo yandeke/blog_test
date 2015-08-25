@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.ydk.mapper.BlogMapper">  
+	<resultMap type="com.ydk.model.Blog" id="blogMap">
+		<id property="id" column="id" />
+        <result property="content" column="content" />
+        <result property="cTime" column="c_time" javaType="java.util.Date"/>
+        <result property="userId" column="user_id" />
+   </resultMap>   
+   <insert id="addBlog" parameterType="com.ydk.model.Blog">
+   		<![CDATA[
+   			insert into blog(content,c_time,user_id)
+   			values(
+   			#{content,jdbcType=VARCHAR},
+   			#{c_time,jdbcType=DATE},
+   			#{user_id,jdbcType=Long})
+   		]]>
+   </insert> 
+</mapper> 
